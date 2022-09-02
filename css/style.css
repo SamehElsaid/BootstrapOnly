@@ -1,0 +1,284 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    --transition-all: all .4s ease-in-out;
+}
+
+section {
+    padding: 100px 0 !important;
+    background-color: var(--section-color) !important;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .active,
+.navbar .navbar-nav a:hover,
+.navbar .navbar-nav a:focus {
+    color: var(--green-color) !important;
+    transition: var(--transition-all);
+}
+
+.navbar .navbar-toggler {
+    background-color: white;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+
+}
+
+.btn-info {
+    background-color: var(--green-color) !important;
+    border-color: var(--green-color) !important;
+    transition: var(--transition-all);
+}
+
+.search {
+    color: var(--green-color);
+    font-size: 1.1rem;
+    border-left: 1px solid var(--green-color);
+}
+
+.btn-info:hover {
+    color: var(--green-color) !important;
+    background-color: white !important;
+    border-color: var(--green-color) !important;
+}
+
+.header {
+    height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+
+/* Start stuff */
+.text::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green-color);
+}
+
+.feat .icon {
+    height: 200px;
+}
+
+.stuff .fa-solid {
+    font-size: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    color: var(--section-color);
+}
+
+.stuff .secIcon {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: var(--green-color);
+}
+
+.stuff h3 {
+    color: var(--yellow-color);
+}
+
+/* End stuff */
+/* Start blog */
+.blog ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog ul li a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    transition: var(--transition-all);
+}
+
+.blog ul li .active {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.blog ul li a:not(.active):hover {
+    color: var(--green-color);
+}
+
+.blog .row .img {
+    position: relative;
+    padding: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.blog .row .img::after {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1ccc4;
+    top: 5px;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-all);
+    transform: translateX(calc(-100% - 10px));
+    font-weight: bold;
+}
+
+.blog .row .img:hover::after {
+    transform: translate(0);
+}
+
+/* End blog */
+/* Start about */
+.pControl {
+    max-width: 600px;
+}
+
+/* End about */
+/* Start Team */
+.team h2 {
+    color: var(--green-color);
+}
+
+.team h4 {
+    background-color: var(--green-color);
+}
+
+blockquote {
+    padding: 0 10px;
+}
+
+/* End Team */
+/* Start lab */
+.lab .img {
+    transition: var(--transition-all);
+    cursor: pointer;
+}
+
+.lab .img:hover {
+    filter: brightness(0);
+}
+
+/* End lab */
+/* Start project */
+.project {
+    background-color: var(--dark-color) !important;
+}
+
+/* End project */
+/* Start Read */
+.read .card .img {
+    overflow: hidden;
+}
+
+.read .card img {
+    transition: var(--transition-all);
+}
+
+.read .card:hover img {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* End Read */
+/* start subscribe */
+.subscribe {
+    background-color: var(--yellow-color) !important;
+}
+
+.subscribe input[type="text"] {
+    border-bottom: 1px solid white !important;
+}
+
+.subscribe input[type="text"]::placeholder {
+    color: white;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.btn-danger {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    border: 1px solid var(--dark-color);
+    transition: var(--transition-all);
+}
+
+.btn-danger:hover {
+    border: 1px solid var(--dark-color);
+    background-color: transparent;
+    color: var(--dark-color);
+}
+
+/* End subscribe */
+/* Start Footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer .copyRight span:nth-of-type(1){
+    color: var(--green-color);
+}
+footer .copyRight span:nth-of-type(2){
+    color: var(--yellow-color);
+}
+footer ul li a{
+    transition: var(--transition-all);
+}
+footer ul li a:hover{
+    color: var(--green-color) !important;
+    padding-left: 10px;
+}
+footer .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    transition: var(--transition-all);
+    cursor: pointer;
+}
+footer .icon:nth-of-type(1){
+    background-color: #1877f2;
+}
+footer .icon:nth-of-type(1):hover{
+    color: #1877f2;
+    background-color: white;
+}
+footer .icon:nth-of-type(2){
+    background-color: #1da1f2;
+}
+footer .icon:nth-of-type(2):hover{
+    color: #1da1f2;
+    background-color: white;
+}
+footer .icon:nth-of-type(3){
+    background-color: #1877f2;
+}
+footer .icon:nth-of-type(3):hover{
+    color: #1877f2;
+    background-color: white;
+}
+footer .icon:nth-of-type(4){
+    background-color: red;
+}
+footer .icon:nth-of-type(4):hover{
+    color: red;
+    background-color: white;
+}
+/* End Footer */
